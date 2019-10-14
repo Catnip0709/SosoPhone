@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="嗖嗖移动用户菜单"
+            android:textAllCaps="false"
+            android:textColor="#009688"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.079" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="115dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="请选择你的操作"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:layout_editor_absoluteX="148dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:onClick="showAmountDetail"
+            android:text="1、本月账单查询"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:onClick="showRemainDetail"
+            android:text="2、套餐余量查询"
+            app:layout_constraintBottom_toTopOf="@+id/button3"
+            tools:layout_editor_absoluteX="130dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:onClick="showDescription"
+            android:text="3、打印消费详单"
+            app:layout_constraintBottom_toTopOf="@+id/button4"
+            tools:layout_editor_absoluteX="130dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:onClick="changingPack"
+            android:text="4、套餐变更"
+            tools:layout_editor_absoluteX="130dp"
+            tools:layout_editor_absoluteY="425dp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:onClick="delCard"
+            android:text="5、办理退网"
+            tools:layout_editor_absoluteX="130dp"
+            tools:layout_editor_absoluteY="505dp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:onClick="TurnBack"
+            android:text="6、返回上一页"
+            tools:layout_editor_absoluteX="130dp"
+            tools:layout_editor_absoluteY="585dp" />
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
